@@ -31,7 +31,7 @@ export default function Index() {
           padding: "40px 0", display: "flex", flexDirection: "column", position: "sticky", top: 0, height: "100vh", overflowY: "auto"
         }}>
           <div style={{ padding: "0 28px 32px", borderBottom: "1px solid #e8e8e4" }}>
-            <div style={{ fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: "#999", marginBottom: 8 }}>Проект</div>
+            <div style={{ fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: "#1a1a1a", marginBottom: 8 }}>Проект</div>
             <div style={{ fontFamily: "'Cormorant', serif", fontSize: 20, fontWeight: 600, lineHeight: 1.3, color: "#1a1a1a" }}>
               Творческий проект
             </div>
@@ -55,17 +55,17 @@ export default function Index() {
                 <span style={{
                   width: 22, height: 22, borderRadius: "50%",
                   background: active === s.id ? "#c0392b" : "#e8e8e4",
-                  color: active === s.id ? "#fff" : "#999",
+                  color: active === s.id ? "#fff" : "#1a1a1a",
                   display: "flex", alignItems: "center", justifyContent: "center",
                   fontSize: 10, fontWeight: 700, flexShrink: 0
                 }}>{s.id}</span>
-                <span style={{ fontSize: 13, fontWeight: active === s.id ? 600 : 400, color: active === s.id ? "#1a1a1a" : "#666" }}>
+                <span style={{ fontSize: 13, fontWeight: active === s.id ? 600 : 400, color: active === s.id ? "#1a1a1a" : "#1a1a1a" }}>
                   {s.label}
                 </span>
               </button>
             ))}
           </nav>
-          <div style={{ padding: "24px 28px", borderTop: "1px solid #e8e8e4", fontSize: 11, color: "#bbb", lineHeight: 1.6 }}>
+          <div style={{ padding: "24px 28px", borderTop: "1px solid #e8e8e4", fontSize: 11, color: "#1a1a1a", lineHeight: 1.6 }}>
             2026 год · 5 класс
           </div>
         </aside>
@@ -75,18 +75,18 @@ export default function Index() {
 
           {active === 1 && (
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "70vh", textAlign: "center" }}>
-              <div style={{ fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#999", marginBottom: 32 }}>
+              <div style={{ fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#1a1a1a", marginBottom: 32 }}>
                 Муниципальное общеобразовательное учреждение
               </div>
               <div style={{ fontFamily: "'Cormorant', serif", fontSize: 56, fontWeight: 600, lineHeight: 1.15, marginBottom: 8 }}>
                 Брелоки
               </div>
               <div style={{ width: 80, height: 2, background: "#c0392b", marginBottom: 48 }} />
-              <div style={{ fontSize: 14, color: "#555", lineHeight: 2.4 }}>
-                <div><span style={{ color: "#999" }}>Творческий проект</span></div>
-                <div><span style={{ color: "#999" }}>Выполнил:</span> Хохлов Руслан, 9В</div>
-                <div><span style={{ color: "#999" }}>Руководитель:</span> Учитель трудов</div>
-                <div><span style={{ color: "#999" }}>Год:</span> 2026</div>
+              <div style={{ fontSize: 14, color: "#1a1a1a", lineHeight: 2.4 }}>
+                <div><span style={{ color: "#1a1a1a" }}>Творческий проект</span></div>
+                <div><span style={{ color: "#1a1a1a" }}>Выполнил:</span> Хохлов Руслан, 9В</div>
+                <div><span style={{ color: "#1a1a1a" }}>Руководитель:</span> Учитель трудов</div>
+                <div><span style={{ color: "#1a1a1a" }}>Год:</span> 2026</div>
               </div>
               <div style={{ marginTop: 64, display: "flex", gap: 24 }}>
                 <div style={{ fontSize: 52 }}>♠</div>
@@ -116,9 +116,9 @@ export default function Index() {
                     <span style={{
                       width: 28, height: 28, borderRadius: "50%", background: "#f0f0ec",
                       display: "flex", alignItems: "center", justifyContent: "center",
-                      fontSize: 12, fontWeight: 600, color: "#666", flexShrink: 0
+                      fontSize: 12, fontWeight: 600, color: "#1a1a1a", flexShrink: 0
                     }}>{item.n}</span>
-                    <span style={{ flex: 1, fontSize: 15, color: "#333" }}>{item.t}</span>
+                    <span style={{ flex: 1, fontSize: 15, color: "#1a1a1a" }}>{item.t}</span>
                     <span style={{ fontSize: 13, color: "#c0392b", fontWeight: 600 }}>{item.p}</span>
                   </div>
                 ))}
@@ -136,7 +136,7 @@ export default function Index() {
                 <BodyText><b>Актуальность темы:</b> Брелоки пользуются большой популярностью среди молодёжи и детей. Создание брелока своими руками — это интересное творческое занятие, развивающее художественный вкус и мелкую моторику.</BodyText>
                 <BodyText><b>Цель проекта:</b> Создать оригинальные брелоки в форме карты пики и сердечка из картона своими руками.</BodyText>
                 <BodyText><b>Задачи:</b></BodyText>
-                <ul style={{ paddingLeft: 20, color: "#444", lineHeight: 2.2, fontSize: 15 }}>
+                <ul style={{ paddingLeft: 20, color: "#1a1a1a", lineHeight: 2.2, fontSize: 15 }}>
                   <li>Изучить историю возникновения брелоков</li>
                   <li>Выбрать материал для изготовления</li>
                   <li>Разработать дизайн брелоков</li>
@@ -162,7 +162,7 @@ export default function Index() {
                   ].map((item) => (
                     <div key={item.era} style={{ padding: "20px 24px", background: "#fff", border: "1px solid #e8e8e4", borderRadius: 8 }}>
                       <div style={{ fontSize: 12, fontWeight: 700, color: "#c0392b", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 8 }}>{item.era}</div>
-                      <div style={{ fontSize: 14, color: "#555", lineHeight: 1.7 }}>{item.desc}</div>
+                      <div style={{ fontSize: 14, color: "#1a1a1a", lineHeight: 1.7 }}>{item.desc}</div>
                     </div>
                   ))}
                 </div>
@@ -177,7 +177,7 @@ export default function Index() {
               <div style={{ marginTop: 40 }}>
                 <BodyText>Для создания брелоков был выбран <b>картон</b>. Это доступный, лёгкий и экологичный материал, отлично подходящий для ручного творчества.</BodyText>
                 <div style={{ margin: "32px 0" }}>
-                  <div style={{ fontSize: 13, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "#999", marginBottom: 16 }}>Сравнение материалов</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "#1a1a1a", marginBottom: 16 }}>Сравнение материалов</div>
                   <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
                     <thead>
                       <tr style={{ background: "#1a1a1a", color: "#fff" }}>
@@ -195,10 +195,10 @@ export default function Index() {
                         { m: "Полимерная глина", a: "Средняя", s: "Средняя", r: "Хороший" },
                       ].map((row, i) => (
                         <tr key={row.m} style={{ background: i % 2 === 0 ? "#f9f9f7" : "#fff", borderBottom: "1px solid #e8e8e4" }}>
-                          <td style={{ padding: "11px 16px", fontWeight: i === 0 ? 700 : 400, color: i === 0 ? "#c0392b" : "#333" }}>{row.m}</td>
-                          <td style={{ padding: "11px 16px", color: "#555" }}>{row.a}</td>
-                          <td style={{ padding: "11px 16px", color: "#555" }}>{row.s}</td>
-                          <td style={{ padding: "11px 16px", color: "#555" }}>{row.r}</td>
+                          <td style={{ padding: "11px 16px", fontWeight: i === 0 ? 700 : 400, color: i === 0 ? "#c0392b" : "#1a1a1a" }}>{row.m}</td>
+                          <td style={{ padding: "11px 16px", color: "#1a1a1a" }}>{row.a}</td>
+                          <td style={{ padding: "11px 16px", color: "#1a1a1a" }}>{row.s}</td>
+                          <td style={{ padding: "11px 16px", color: "#1a1a1a" }}>{row.r}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -222,7 +222,7 @@ export default function Index() {
                     <div style={{ padding: "20px 24px" }}>
                       <div style={{ fontSize: 32, marginBottom: 8 }}>♠</div>
                       <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 6 }}>Карта пики</div>
-                      <div style={{ fontSize: 13, color: "#666", lineHeight: 1.7 }}>Чёрный цвет, строгая форма. Символизирует смелость и решительность.</div>
+                      <div style={{ fontSize: 13, color: "#1a1a1a", lineHeight: 1.7 }}>Чёрный цвет, строгая форма. Символизирует смелость и решительность.</div>
                     </div>
                   </div>
                   <div style={{ background: "#fff", border: "2px solid #c0392b", borderRadius: 12, overflow: "hidden" }}>
@@ -232,7 +232,7 @@ export default function Index() {
                     <div style={{ padding: "20px 24px" }}>
                       <div style={{ fontSize: 32, color: "#c0392b", marginBottom: 8 }}>♥</div>
                       <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 6 }}>Сердечко</div>
-                      <div style={{ fontSize: 13, color: "#666", lineHeight: 1.7 }}>Красный цвет, мягкая форма. Символизирует любовь и тепло.</div>
+                      <div style={{ fontSize: 13, color: "#1a1a1a", lineHeight: 1.7 }}>Красный цвет, мягкая форма. Символизирует любовь и тепло.</div>
                     </div>
                   </div>
                 </div>
@@ -258,22 +258,22 @@ export default function Index() {
                         position: "relative", padding: 20
                       }}>
                         <div style={{ fontSize: 80, lineHeight: 1, color: m.color }}>{m.sym}</div>
-                        <div style={{ position: "absolute", top: 8, left: 8, fontSize: 10, color: "#999" }}>5 см</div>
-                        <div style={{ position: "absolute", top: "50%", right: 8, fontSize: 10, color: "#999", transform: "translateY(-50%) rotate(90deg)" }}>5 см</div>
+                        <div style={{ position: "absolute", top: 8, left: 8, fontSize: 10, color: "#1a1a1a" }}>5 см</div>
+                        <div style={{ position: "absolute", top: "50%", right: 8, fontSize: 10, color: "#1a1a1a", transform: "translateY(-50%) rotate(90deg)" }}>5 см</div>
                         <div style={{
                           position: "absolute", top: -12, left: "50%", transform: "translateX(-50%)",
                           width: 16, height: 20, borderRadius: 4, background: "#ddd", border: "1px solid #ccc"
                         }} />
                       </div>
                       <div style={{ marginTop: 12, fontSize: 13, fontWeight: 600 }}>{m.label}</div>
-                      <div style={{ fontSize: 11, color: "#999" }}>{m.note}</div>
+                      <div style={{ fontSize: 11, color: "#1a1a1a" }}>{m.note}</div>
                     </div>
                   ))}
                 </div>
                 <div style={{ background: "#f4f4f0", borderRadius: 8, padding: "20px 24px", marginTop: 24 }}>
-                  <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 12, textTransform: "uppercase", letterSpacing: "0.08em", color: "#555" }}>Материалы для изготовления</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 12, textTransform: "uppercase", letterSpacing: "0.08em", color: "#1a1a1a" }}>Материалы для изготовления</div>
                   {["Цветной картон (чёрный, красный, белый)", "Ножницы и канцелярский нож", "Простой карандаш и линейка", "Клей ПВА или двусторонний скотч", "Дырокол"].map((item, i) => (
-                    <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, padding: "7px 0", fontSize: 14, color: "#444" }}>
+                    <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, padding: "7px 0", fontSize: 14, color: "#1a1a1a" }}>
                       <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#c0392b", flexShrink: 0 }} />
                       {item}
                     </div>
@@ -307,7 +307,7 @@ export default function Index() {
                       }}>{step.n}</div>
                       <div>
                         <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 6 }}>{step.title}</div>
-                        <div style={{ fontSize: 14, color: "#666", lineHeight: 1.7 }}>{step.desc}</div>
+                        <div style={{ fontSize: 14, color: "#1a1a1a", lineHeight: 1.7 }}>{step.desc}</div>
                       </div>
                     </div>
                   ))}
@@ -367,7 +367,7 @@ export default function Index() {
                       color: "#fff", display: "flex", alignItems: "center", justifyContent: "center",
                       fontSize: 12, fontWeight: 700, flexShrink: 0
                     }}>{src.n}</span>
-                    <span style={{ fontSize: 14, color: "#444", lineHeight: 1.8 }}>{src.text}</span>
+                    <span style={{ fontSize: 14, color: "#1a1a1a", lineHeight: 1.8 }}>{src.text}</span>
                   </div>
                 ))}
               </div>
@@ -382,10 +382,10 @@ export default function Index() {
               style={{
                 padding: "10px 24px", border: "1px solid #e8e8e4", borderRadius: 6,
                 background: "transparent", cursor: active === 1 ? "default" : "pointer",
-                color: active === 1 ? "#ccc" : "#333", fontSize: 14
+                color: active === 1 ? "#ccc" : "#1a1a1a", fontSize: 14
               }}
             >← Назад</button>
-            <span style={{ fontSize: 12, color: "#bbb", alignSelf: "center" }}>{active} / {sections.length}</span>
+            <span style={{ fontSize: 12, color: "#1a1a1a", alignSelf: "center" }}>{active} / {sections.length}</span>
             <button
               onClick={() => setActive(Math.min(sections.length, active + 1))}
               disabled={active === sections.length}
@@ -393,7 +393,7 @@ export default function Index() {
                 padding: "10px 24px", border: "none", borderRadius: 6,
                 background: active === sections.length ? "#e8e8e4" : "#c0392b",
                 cursor: active === sections.length ? "default" : "pointer",
-                color: active === sections.length ? "#999" : "#fff", fontSize: 14
+                color: active === sections.length ? "#1a1a1a" : "#fff", fontSize: 14
               }}
             >Вперёд →</button>
           </div>
@@ -418,7 +418,7 @@ function SectionHeader({ num, title }: { num: number; title: string }) {
 
 function BodyText({ children }: { children: React.ReactNode }) {
   return (
-    <p style={{ fontSize: 15, color: "#444", lineHeight: 1.85, margin: "20px 0" }}>
+    <p style={{ fontSize: 15, color: "#1a1a1a", lineHeight: 1.85, margin: "20px 0" }}>
       {children}
     </p>
   );
@@ -430,7 +430,7 @@ function InfoCard({ children, accent }: { children: React.ReactNode; accent?: bo
       padding: "20px 24px", borderRadius: 8, margin: "24px 0",
       background: accent ? "#fff8f7" : "#f9f9f7",
       borderLeft: `4px solid ${accent ? "#c0392b" : "#1a1a1a"}`,
-      fontSize: 15, color: "#333", lineHeight: 1.85
+      fontSize: 15, color: "#1a1a1a", lineHeight: 1.85
     }}>
       {children}
     </div>
