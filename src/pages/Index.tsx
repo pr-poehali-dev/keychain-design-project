@@ -81,14 +81,11 @@ export default function Index() {
               <div style={{ fontFamily: "'Cormorant', serif", fontSize: 56, fontWeight: 600, lineHeight: 1.15, marginBottom: 8 }}>
                 Брелоки
               </div>
-              <div style={{ fontFamily: "'Cormorant', serif", fontSize: 28, color: "#c0392b", fontStyle: "italic", marginBottom: 48 }}>
-                ♠ Карта пики и сердечко ♥
-              </div>
               <div style={{ width: 80, height: 2, background: "#c0392b", marginBottom: 48 }} />
               <div style={{ fontSize: 14, color: "#555", lineHeight: 2.4 }}>
                 <div><span style={{ color: "#999" }}>Творческий проект</span></div>
-                <div><span style={{ color: "#999" }}>Выполнила:</span> Ученица 5 класса</div>
-                <div><span style={{ color: "#999" }}>Руководитель:</span> Учитель технологии</div>
+                <div><span style={{ color: "#999" }}>Выполнил:</span> Хохлов Руслан, 9В</div>
+                <div><span style={{ color: "#999" }}>Руководитель:</span> Учитель трудов</div>
                 <div><span style={{ color: "#999" }}>Год:</span> 2026</div>
               </div>
               <div style={{ marginTop: 64, display: "flex", gap: 24 }}>
@@ -275,7 +272,7 @@ export default function Index() {
                 </div>
                 <div style={{ background: "#f4f4f0", borderRadius: 8, padding: "20px 24px", marginTop: 24 }}>
                   <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 12, textTransform: "uppercase", letterSpacing: "0.08em", color: "#555" }}>Материалы для изготовления</div>
-                  {["Цветной картон (чёрный, красный, белый)", "Ножницы и канцелярский нож", "Простой карандаш и линейка", "Клей ПВА или двусторонний скотч", "Кольца для ключей (металлические)", "Прозрачный лак (для защиты)", "Дырокол"].map((item, i) => (
+                  {["Цветной картон (чёрный, красный, белый)", "Ножницы и канцелярский нож", "Простой карандаш и линейка", "Клей ПВА или двусторонний скотч", "Дырокол"].map((item, i) => (
                     <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, padding: "7px 0", fontSize: 14, color: "#444" }}>
                       <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#c0392b", flexShrink: 0 }} />
                       {item}
@@ -298,8 +295,7 @@ export default function Index() {
                     { n: "03", title: "Вырезание", desc: "Аккуратно вырезала фигуры по контуру ножницами. Края обработала для ровности." },
                     { n: "04", title: "Склеивание слоёв", desc: "Для прочности склеила два слоя картона вместе с помощью клея ПВА. Оставила под прессом на 30 минут." },
                     { n: "05", title: "Декорирование", desc: "Нанесла белую обводку на пику и золотой контур на сердечко маркером. Добавила детали." },
-                    { n: "06", title: "Отверстие и кольцо", desc: "Сделала отверстие дыроколом в верхней части. Прикрепила металлическое кольцо для ключей." },
-                    { n: "07", title: "Лакировка", desc: "Покрыла готовые брелоки прозрачным лаком в 2 слоя для защиты от влаги и износа." },
+                    { n: "06", title: "Отверстие", desc: "Сделал отверстие дыроколом в верхней части брелока." },
                   ].map((step, i) => (
                     <div key={step.n} style={{
                       display: "flex", gap: 20, padding: "20px 24px",
